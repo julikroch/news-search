@@ -24,10 +24,7 @@ function App() {
     <Fragment>
       <Header title='News Searcher' />
       <div className='container white'>
-        <Form
-          saveCategory={saveCategory}
-        />
-
+        <Form saveCategory={saveCategory} />
         <NewsList news={news} />
       </div>
     </Fragment>
