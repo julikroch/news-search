@@ -3,8 +3,6 @@ import styles from './Form.module.css'
 
 const Form = (props: { saveCategory: any }) => {
 
-    const { saveCategory } = props
-
     const OPTIONS = [
         { value: 'general', label: 'General' },
         { value: 'business', label: 'Business' },
@@ -22,7 +20,7 @@ const Form = (props: { saveCategory: any }) => {
 
     const searchNews = (e: any) => {
         e.preventDefault()
-        saveCategory(category)
+        props.saveCategory(category)
     }
 
     return (

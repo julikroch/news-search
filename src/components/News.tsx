@@ -23,7 +23,7 @@ const News = (props: { item: any }) => {
                             rel='noopener noreferrer'
                             className='waves-effect waves-light button'
                         >
-                            Go to complete notice
+                            Go to complete new
                         </a>
                     </div>
                 </div>
