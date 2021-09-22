@@ -1,4 +1,4 @@
-import News from "../News"
+import News from '../News'
 import styles from './NewsList.module.css'
 
 const NewsList = (props: { news: any }) => {
@@ -12,7 +12,7 @@ const NewsList = (props: { news: any }) => {
                     item={item}
                 />
             ))}
-        </div >
+        </div>
     )
 }
 
