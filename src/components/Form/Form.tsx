@@ -1,7 +1,9 @@
-import useSelect from '../hooks/useSelect'
+import useSelect from '../../hooks/useSelect'
 import styles from './Form.module.css'
 
-const Form = () => {
+const Form = (props: { saveCategory: any }) => {
+
+    const { saveCategory } = props
 
     const OPTIONS = [
         { value: 'general', label: 'General' },
@@ -18,14 +20,18 @@ const Form = () => {
         options: OPTIONS
     })
 
+    const searchNews = (e: any) => {
+        e.preventDefault()
+        saveCategory(category)
+    }
+
     return (
         <div className={`${styles.search} row`}>
-            <div className="col s12 m8 offset-2">
-                <form>
+            <div className='col s12 m12 offset-2'>
+                <form onSubmit={searchNews}>
                     <h2 className={styles.heading}>Find your news by category</h2>
-
                     <NewsSelect />
-                    <div className="input-field col s12">
+                    <div className='input-field col s12'>
                         <input
                             type='submit'
                             className={`${styles.btn_block} btn-large amber darken-2`}
