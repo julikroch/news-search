@@ -3,8 +3,6 @@ import Header from './components/Header';
 import Form from './components/Form/Form';
 import NewsList from './components/NewsList/NewsList';
 
-
-
 function App() {
 
   const APIKEY: string = 'e251045db61344ee8a91045d11642c9a';
