@@ -33,7 +33,7 @@ const Form = (props: { saveCategory: any }) => {
                         <input
                             type='submit'
                             className={`${styles.btn_block} btn-large amber darken-2`}
-                            value='Search'
+                            value='Find'
                         />
                     </div>
                 </form>
