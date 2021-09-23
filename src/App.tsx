@@ -21,13 +21,13 @@ function App() {
   }, [category])
 
   return (
-    <Fragment>
+    <>
       <Header title='News Searcher' />
       <div className='container white'>
         <Form saveCategory={saveCategory} />
         <NewsList news={news} />
       </div>
-    </Fragment>
+    </>
   )
 }
 
